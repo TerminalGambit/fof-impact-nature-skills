@@ -1,0 +1,17 @@
+fof-impact-nature-skills
+========================
+
+This repository contains:
+
+1. Eight original skills (carbon-credit-quality, fund-impact-report-parser,
+   fund-of-funds-diligence, gp-track-record-parser, impact-diligence,
+   lpa-redline, regen-glossary, tnfd-leap) authored by Jack Massey.
+
+2. Four plugin bundles in `anthropic-plugins/` mirrored from
+   https://github.com/anthropics/financial-services-plugins
+   licensed under the Apache License, Version 2.0.
+
+   Copyright 2025 Anthropic, PBC.
+
+   The Apache 2.0 LICENSE is bundled inside each plugin ZIP. Original source:
+   https://github.com/anthropics/financial-services-plugins/tree/main/plugins/vertical-plugins

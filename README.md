@@ -1,6 +1,6 @@
 # fof-impact-nature-skills
 
-Eight Claude Skills for fund-of-funds, impact, and natural-capital diligence.
+Eight custom Claude Skills for fund-of-funds, impact, and natural-capital diligence — plus four Anthropic-published plugin bundles for financial-analysis, investment-banking, private-equity, and fund-admin (mirrored under `anthropic-plugins/` for convenience, Apache 2.0).
 
 Built for LP allocators, family offices, and impact-mandate investment teams. Each skill is self-contained — install whichever fit your workflow.
 
@@ -19,6 +19,19 @@ Built for LP allocators, family offices, and impact-mandate investment teams. Ea
 
 These chain. A regen-ag fund commitment, end-to-end:
 `fund-of-funds-diligence` → `gp-track-record-parser` → `lpa-redline` → `impact-diligence` → `tnfd-leap` → `regen-glossary` → memo draft.
+
+## Anthropic plugin ZIPs (`anthropic-plugins/`)
+
+Four pre-zipped plugin bundles mirrored from [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) (Apache 2.0). Each archive contains the plugin's `.claude-plugin/plugin.json`, `commands/`, `hooks/`, and nested `skills/`.
+
+| File | Inner skills |
+|---|---|
+| `financial-analysis.zip` | 3-statement-model, dcf-model, lbo-model, comps-analysis, competitive-analysis, audit-xls, clean-data-xls, deck-refresh, ib-check-deck, ppt-template-creator, pptx-author, xlsx-author, skill-creator |
+| `investment-banking.zip` | buyer-list, cim-builder, datapack-builder, deal-tracker, merger-model, pitch-deck, process-letter, strip-profile, teaser |
+| `private-equity.zip` | ai-readiness, dd-checklist, dd-meeting-prep, deal-screening, deal-sourcing, ic-memo, portfolio-monitoring, returns-analysis, unit-economics, value-creation-plan |
+| `fund-admin.zip` | accrual-schedule, break-trace, gl-recon, nav-tieout, roll-forward, variance-commentary |
+
+**Note on format:** these are Claude Code *plugin* bundles, not single SKILL.md skills. The intended install path is Claude Desktop → **Cowork tab** → Customize → Browse plugins → "Add marketplace from GitHub" → `https://github.com/anthropics/financial-services-plugins`. Drag-and-drop into the Settings → Skills uploader may not work since there's no top-level `SKILL.md`. If it doesn't, use the Cowork marketplace flow or Claude Code's CLI (`claude /plugin marketplace add anthropics/financial-services-plugins`).
 
 ## Install
 
