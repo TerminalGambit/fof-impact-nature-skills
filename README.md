@@ -1,6 +1,6 @@
 # fof-impact-nature-skills
 
-Eight custom Claude Skills for fund-of-funds, impact, and natural-capital diligence — plus four Anthropic-published plugin bundles for financial-analysis, investment-banking, private-equity, and fund-admin (mirrored under root-level ZIPs for convenience, Apache 2.0).
+Eight custom Claude Skills for fund-of-funds, impact, and natural-capital diligence — plus 38 individual skill ZIPs extracted from Anthropic's financial-services plugins (financial-analysis, investment-banking, private-equity, fund-admin — Apache 2.0). Every ZIP is drag-drop-ready for Claude Desktop's Skills uploader (SKILL.md at the root of each archive).
 
 Built for LP allocators, family offices, and impact-mandate investment teams. Each skill is self-contained — install whichever fit your workflow.
 
@@ -20,18 +20,23 @@ Built for LP allocators, family offices, and impact-mandate investment teams. Ea
 These chain. A regen-ag fund commitment, end-to-end:
 `fund-of-funds-diligence` → `gp-track-record-parser` → `lpa-redline` → `impact-diligence` → `tnfd-leap` → `regen-glossary` → memo draft.
 
-## Anthropic plugin ZIPs (at repo root)
+## Anthropic skill ZIPs (38 individual skills, at repo root)
 
-Four pre-zipped plugin bundles mirrored from [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) (Apache 2.0). Each archive contains the plugin's `.claude-plugin/plugin.json`, `commands/`, `hooks/`, and nested `skills/`.
+Extracted from [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) (Apache 2.0). Each ZIP is a stand-alone Claude Desktop skill — `<skill-name>/SKILL.md` at the root of the archive, plus the Apache 2.0 LICENSE for attribution.
 
-| File | Inner skills |
-|---|---|
-| `financial-analysis.zip` | 3-statement-model, dcf-model, lbo-model, comps-analysis, competitive-analysis, audit-xls, clean-data-xls, deck-refresh, ib-check-deck, ppt-template-creator, pptx-author, xlsx-author, skill-creator |
-| `investment-banking.zip` | buyer-list, cim-builder, datapack-builder, deal-tracker, merger-model, pitch-deck, process-letter, strip-profile, teaser |
-| `private-equity.zip` | ai-readiness, dd-checklist, dd-meeting-prep, deal-screening, deal-sourcing, ic-memo, portfolio-monitoring, returns-analysis, unit-economics, value-creation-plan |
-| `fund-admin.zip` | accrual-schedule, break-trace, gl-recon, nav-tieout, roll-forward, variance-commentary |
+### From `financial-analysis` (13)
+`3-statement-model.zip` · `audit-xls.zip` · `clean-data-xls.zip` · `competitive-analysis.zip` · `comps-analysis.zip` · `dcf-model.zip` · `deck-refresh.zip` · `ib-check-deck.zip` · `lbo-model.zip` · `ppt-template-creator.zip` · `pptx-author.zip` · `skill-creator.zip` · `xlsx-author.zip`
 
-**Note on format:** these are Claude Code *plugin* bundles, not single SKILL.md skills. The intended install path is Claude Desktop → **Cowork tab** → Customize → Browse plugins → "Add marketplace from GitHub" → `https://github.com/anthropics/financial-services-plugins`. Drag-and-drop into the Settings → Skills uploader may not work since there's no top-level `SKILL.md`. If it doesn't, use the Cowork marketplace flow or Claude Code's CLI (`claude /plugin marketplace add anthropics/financial-services-plugins`).
+### From `investment-banking` (9)
+`buyer-list.zip` · `cim-builder.zip` · `datapack-builder.zip` · `deal-tracker.zip` · `merger-model.zip` · `pitch-deck.zip` · `process-letter.zip` · `strip-profile.zip` · `teaser.zip`
+
+### From `private-equity` (10)
+`ai-readiness.zip` · `dd-checklist.zip` · `dd-meeting-prep.zip` · `deal-screening.zip` · `deal-sourcing.zip` · `ic-memo.zip` · `portfolio-monitoring.zip` · `returns-analysis.zip` · `unit-economics.zip` · `value-creation-plan.zip`
+
+### From `fund-admin` (6)
+`accrual-schedule.zip` · `break-trace.zip` · `gl-recon.zip` · `nav-tieout.zip` · `roll-forward.zip` · `variance-commentary.zip`
+
+**Note:** these are the *skills* extracted from each plugin, not the full plugin (which would also include slash commands and hooks). Drag-drop each ZIP into Claude Desktop → Settings → Customize → Skills → `+` → Upload. If you also want the slash commands and hooks bundled with each plugin, install the full plugin via Claude Code: `claude /plugin marketplace add anthropics/financial-services-plugins` then `claude /plugin install <plugin-name>`.
 
 ## Install
 

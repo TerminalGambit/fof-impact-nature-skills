@@ -7,12 +7,17 @@ This repository contains:
    fund-of-funds-diligence, gp-track-record-parser, impact-diligence,
    lpa-redline, regen-glossary, tnfd-leap) authored by Jack Massey.
 
-2. Four plugin bundles at the repo root (`financial-analysis.zip`,
-   `investment-banking.zip`, `private-equity.zip`, `fund-admin.zip`) mirrored from
+2. Thirty-eight individual skill ZIPs at the repo root, extracted from
    https://github.com/anthropics/financial-services-plugins
    licensed under the Apache License, Version 2.0.
 
    Copyright 2025 Anthropic, PBC.
 
-   The Apache 2.0 LICENSE is bundled inside each plugin ZIP. Original source:
+   Skills are drawn from these source plugins:
+   - financial-analysis (13 skills)
+   - investment-banking (9 skills)
+   - private-equity (10 skills)
+   - fund-admin (6 skills)
+
+   The Apache 2.0 LICENSE is bundled inside each ZIP. Original source:
    https://github.com/anthropics/financial-services-plugins/tree/main/plugins/vertical-plugins
