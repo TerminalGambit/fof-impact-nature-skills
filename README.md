@@ -1,6 +1,6 @@
 # fof-impact-nature-skills
 
-Eight custom Claude Skills for fund-of-funds, impact, and natural-capital diligence — plus four Anthropic-published plugin bundles for financial-analysis, investment-banking, private-equity, and fund-admin (mirrored under `anthropic-plugins/` for convenience, Apache 2.0).
+Eight custom Claude Skills for fund-of-funds, impact, and natural-capital diligence — plus four Anthropic-published plugin bundles for financial-analysis, investment-banking, private-equity, and fund-admin (mirrored under root-level ZIPs for convenience, Apache 2.0).
 
 Built for LP allocators, family offices, and impact-mandate investment teams. Each skill is self-contained — install whichever fit your workflow.
 
@@ -20,7 +20,7 @@ Built for LP allocators, family offices, and impact-mandate investment teams. Ea
 These chain. A regen-ag fund commitment, end-to-end:
 `fund-of-funds-diligence` → `gp-track-record-parser` → `lpa-redline` → `impact-diligence` → `tnfd-leap` → `regen-glossary` → memo draft.
 
-## Anthropic plugin ZIPs (`anthropic-plugins/`)
+## Anthropic plugin ZIPs (at repo root)
 
 Four pre-zipped plugin bundles mirrored from [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) (Apache 2.0). Each archive contains the plugin's `.claude-plugin/plugin.json`, `commands/`, `hooks/`, and nested `skills/`.
 

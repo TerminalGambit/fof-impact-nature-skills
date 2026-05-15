@@ -7,7 +7,8 @@ This repository contains:
    fund-of-funds-diligence, gp-track-record-parser, impact-diligence,
    lpa-redline, regen-glossary, tnfd-leap) authored by Jack Massey.
 
-2. Four plugin bundles in `anthropic-plugins/` mirrored from
+2. Four plugin bundles at the repo root (`financial-analysis.zip`,
+   `investment-banking.zip`, `private-equity.zip`, `fund-admin.zip`) mirrored from
    https://github.com/anthropics/financial-services-plugins
    licensed under the Apache License, Version 2.0.
 
